@@ -1,0 +1,22 @@
+
+package account;
+
+//This is Specification 4
+public class AccountTest 
+{
+    public static void main(String[]args)
+    {
+        Account acc1 = new Account(100);
+        Account acc2 = new Account(200);
+        
+        System.out.println(acc1.getBalance());
+        acc1.credit(25);
+        //Account 1 should have 125
+        System.out.println(acc1.getBalance());
+        
+        System.out.println(acc2.getBalance());
+        acc2.debit(62);
+        //Account 2 should have 138
+        System.out.println(acc2.getBalance());
+    }
+}
