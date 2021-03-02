@@ -1,0 +1,79 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package simplemath;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Kat
+ */
+public class SimpleMath {
+
+    public static void main(String [] args ) {
+    int n1, n2, n3, n4, n5;
+    int min, max;
+    
+    Scanner keyBoard = new Scanner( System.in);
+    
+    System.out.print("Lets do some SimpleMath! ");
+    
+    System.out.print(" Please enter five numbers to use today.");
+    
+    System.out.print("\nEnter the first number: ");
+    n1 = keyBoard.nextInt();
+    
+    System.out.print("Enter the second number: ");
+    n2 = keyBoard.nextInt();
+    
+    System.out.print("Enter the third number: ");
+    n3 = keyBoard.nextInt();
+    
+    System.out.print("Enter the fourth number: ");
+    n4 = keyBoard.nextInt();
+    
+    System.out.print("Enter the fifth number: ");
+    n5 = keyBoard.nextInt();
+    
+    System.out.printf("\nYou entered: %d %d %d %d %d\n",n1,n2,n3,n4,n5);
+    
+    System.out.printf("\nThe Sum of these numbers is: %d",n1+n2+n3+n4+n5 );
+    
+    System.out.printf("\nThe Average of these numbers is: %d", (n1+n2+n3+n4+n5)/5 );
+    
+    System.out.printf("\nThe Product of these numbers is: %d\n", n1*n2*n3*n4*n5 );
+    
+    
+    min = n1;
+    if( n2 < min)
+        min = n2;
+    if( n3 < min)
+        min = n3;
+    if( n4 < min)
+        min = n4;
+    if( n5 < min)
+        min = n5;
+    System.out.printf("\nThe Smallest is: %d", min );
+    
+   
+    max = n1;
+    if( n2 > max)
+        max = n2;
+    if( n3 > max)
+        max = n3;
+    if( n4 > max)
+        max = n4;
+    if( n5 > max)
+        max = n5;
+    System.out.printf("\nThe Largest is: %d\n", max);
+    
+    System.out.print("The Quotient of these numbers is:");
+    System.out.printf("\n%d / %d = %d\n", n1, n2, n1/n2);
+    System.out.printf("\n%d %c %d = %d\n", n4, '%', n5, n4%n5);
+    
+    }
+    
+}
