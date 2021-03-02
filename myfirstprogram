@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package myfirstprogram;
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Kat
+ */
+public class MyFirstProgram {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+  Scanner input = new Scanner( System.in );
+    System.out.print("What is your name?");
+    String name = input.nextLine();
+    
+    System.out.print("How old are you?");
+    int age = input.nextInt();
+    
+    System.out.printf("%s is %d years old.", name, age);
+    }}
+        
